@@ -174,7 +174,7 @@ document.addEventListener('click', function(e){
 		const manifest = {
 			format_version: 2,
 			header: {
-				description: "§o§7Created with Bebrock.ML",
+				description: "§o§7Created with Bebrock",
 				name: "§l"+packName[0].toUpperCase()+packName.slice(1),
 				uuid: uuidv4(),
 				version: [0, 0, 1],
