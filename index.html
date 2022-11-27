@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bebrock.ml</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="js/particles.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jszip.min.js"></script>
+		<script src="js/FileSaver.js"></script>
+	</head>
+	<body>
+		<div id="particles-js"></div>
+		<div class="adapt">
+			<div class="content">
+				<div class="totem-generator-header">
+					<label class="el file-upload">
+						<input type="file" id="imageLoader">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 45.8 45.8" fill="currentColor" style="margin-right: 10px;"><path d="M24.4.6C24.1.2 23.5 0 23 0c-.5 0-1.1.2-1.5.6L10 12a2 2 0 0 0 1.4 3.3h3.7v16.3a3 3 0 0 0 2.9 2.9h9.9a3 3 0 0 0 2.9-3V15.5h3.6a2 2 0 0 0 1.4-3.3L24.4.6z"/><path d="M42.4 19.4a3 3 0 0 0-2.9 3v16.3c0 .7-.5 1.2-1.2 1.2H7.5c-.7 0-1.3-.5-1.3-1.2V22.3a3 3 0 1 0-5.8 0v16.4a7 7 0 0 0 7 7.1h30.9c4 0 7-3.2 7-7.1V22.3a3 3 0 0 0-2.9-3z"/></svg>
+						<span>Вибрати скін</span>
+					</label>
+					
+					<div class="modal-back-layer"></div>
+					<div class="modal">
+						<input class="el text-input" id="packName" placeholder="Назва паку">
+						<button class="el btn" style="margin-top: 10px;" id="save">Зберегти</button>
+					</div>
+					
+					<canvas id="canvas" style="display: none"></canvas>
+					<canvas id="totem"></canvas>
+				</div>
+				<div class="totem-generator-footer" style="display: none; opacity: 0;">
+					<button class="el btn" id="save-modal">Продовжити</button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/script.js"></script>
+		<script src="js/totem-generator.js"></script>
+	</body>
+</html>
