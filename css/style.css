@@ -1,49 +1,28 @@
 @font-face {
-
-	font-family: "Jost";	src: url(../fonts/Jost.ttf)format("woff")
-
+	font-family: "Jost";
+	src: url(../fonts/Jost.ttf)format("woff")
 }
 
 @media (min-width:512px) {
-
 	.adapt {
-
 		position: absolute;
-
 		overflow: hidden;
-
 		width: 480px;
-
 		height: 720px;
-
 		border-radius: 12px;
-
 		left: 50%;
-
 		top: 50%;
-
 		transform: translate(-50%,-50%);
-
 		box-shadow: 0 0 100px -20px rgb(0 0 0/.4)
-
 	}
-
 	
-
 	#particles-js {
-
 		position: fixed;
-
 		top: -10%;
-
 		left: -10%;
-
 		width: 120%;
-
 		height: 120%;
-
 	}
-
 }
 
 @media (min-height:512px){
@@ -51,229 +30,130 @@
 }
 
 * {
-
 	box-sizing: border-box;
-
 	font-family: "Jost";
-
 }
 
 a { text-decoration: none; }
-
 svg { pointer-events: none; }
-
 input[type="file"] { display: none; }
 
 input:focus,input:hover {
-
 	outline: 0;
-
 	border-bottom-color: #7055f1;
-
 }
 
 body {
-
 	background-color: #ff3cac;
-
 	background-image: linear-gradient(225deg, #ff3cac 0, #784ba0 50%, #2b86c5 100%);
-
 	background-size: 100vw 100vh;
-
 	background-attachment: fixed;
-
 }
 
 .content {
-
 	background: #fff;
-
 	position: absolute;
-
 	left: 0;
-
 	top: 0;
-
 	width: 100%;
-
 	height: 100%;
-
 	//padding: 10px;
-
 }
 
 .el {
-
 	width: 100%;
-
 	height: 55px;
-
 	letter-spacing: 2px;
-
 	font-size: 16px;
-
 	font-weight: 500;
-
 }
 
 .btn {
-
 	background: #7055f1;
-
 	color: #fff;
-
 	border: 0;
-
 	border-radius: 6px;
-
 	transition: .2s;
-
 }
 
 .btn:hover {
-
 	color: #7055f1;
-
 	background: #fff;
-
 	border: 2px solid #7055f1;
-
 	letter-spacing: 3px;
-
 }
 
 .text-input {
-
 	color: #7055f1;
-
 	border: 0;
-
 	border-bottom: 2px solid #7055f1;
-
 	top: 265px;
-
 	padding: 10px;
-
 }
 
 .file-upload {
-
 	height: calc(100%);
-
 	border: 2px dashed #7055f1;
-
 	color: #7055f1;
-
 	display: inline-block;
-
 	padding: 6px 12px;
-
 	cursor: pointer;
-
 	display: flex;
-
 	justify-content: center;
-
 	align-items: center;
-
 	border-radius: 6px;
-
 	transition: .3s;
-
 }
 
 .totem-generator-header {
-
 	width: 100%;
-
 	height: 100%;
-
 	position: absolute;
-
 	padding: 10px;
-
 }
 
 .totem-generator-footer {
-
 	width: 100%;
-
 	position: absolute;
-
 	padding: 10px;
-
 	bottom: 0;
-
 	transition: .3s .3s;
-
 }
 
 #totem {
-
 	width: 300px;
-
 	height: 300px;
-
 	image-rendering: pixelated;
-
 	position: absolute;
-
 	top: calc(50% - 150px);
-
 	left: calc(50% - 150px);
-
 	transform: scale(0);
-
 	transition: .2s .3s;
-
 }
 
 .modal {
-
 	background: #fff;
-
 	width: 90%;
-
 	position: fixed;
-
 	z-index: 999;
-
 	border-radius: 8px;
-
 	top: 50%;
-
 	left: 50%;
-
 	transform: translate(-50%, -50%) scale(0);
-
 	padding: 10px;
-
 	box-shadow: 0 0 20px rgb(0 0 0/.2);
-
 	opacity: 0;
-
 	transition: .3s;
-
 }
 
 .modal-back-layer {
-
 	backdrop-filter: blur(0);
-
 	position: absolute;
-
 	left: 0;
-
 	top: 0;
-
 	width: 100%;
-
 	height: 100%;
-
 	z-index: 998;
-
 	transition: .2s;
-
 	display: none;
-
 }
